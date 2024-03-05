@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interface de Criptografia</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <section class="section__imagem">
+        <img class="section__esquerda__imagem" id="logo" src="./assets/logo-alura.png" alt="Logo Alura">
+    </section>
+    <section class="section__e">
+        <div class="section__esquerda">
+            <h1 class="section__esquerda__titulo" id="titulo">CRIPTOGRÁFO</h1>
+            <input class="section__esquerda__inferior__input" id="input" type="text" id="inputText" placeholder="Digite seu texto aqui...">
+            <div class="section__esquerda__inferior">
+                <div class="section__esquerda__inferior__info">
+                    <img class="section__esquerda__inferior__imagem" src="./assets/bi_exclamation-circle-fill.png" alt="Ponto de exclamacao">
+                    <p class="section__esquerda__inferior__paragrafo">Não são aceitos, caracteres especiais e acentos!</p>
+                </div>
+                <div class="section__esquerda__inferior__botoes">
+                    <button class="section__esquerda__inferior__criptografar" id="criptografar" onclick="criptografar()">Criptografar</button>
+                    <button class="section__esquerda__inferior__descriptografar" id="descriptografar" onclick="descriptografar()">Descriptografar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section__d">
+        <div class="section__direita">
+            <img class="section__direita__imagem" id="menina" src="./assets/menina-procurando.png" alt="Menina com uma lupa">
+            <p class="section__direita__paragrafo" id="mensagemPadrao"><strong>Nenhuma mensagem encontrada</strong></p>
+            <p class="section__direita__texto" id="textoPadrao">Digite um texto para iniciar a criptografia ou descriptografia.</p>
+            <button class="section__direita__copiar" id="copiar" onclick="copiarTexto()" disabled>Copiar Texto</button>
+        </div>
+    </section>
+</body>
+</html>
